@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.css') }}"> 
+        <!-- important to note, that the location of filename by default, is going to look for things in a 'static' folder -->
+    </head>
+    <body>
+
+
+
+        <nav class="navbar navbar-expand-lg" style="background-color:rgb(179, 203, 179)">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"></a>
+              <img src="https://p.kindpng.com/picc/s/206-2069370_transparent-surgery-images-cliparts-green-tree-images-png.png" alt="Bootstrap" width="35" height="35">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://www.cms.gov/">CMS</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      MyAccount
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="...">Item1</a></li>
+                      <li><a class="dropdown-item" href="...">Item2</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+
+
+
+
+
+
+        <div class="mb-5">
+        <h1> ABC Health Insurance</h1>
+        </div>
+        <!-- bootstrap provides us specific class='xyz' where we can define what styling we want to apply -->
+        <button class="btn btn-primary"> Member </button> <!-- class="btn btn-primary" it is telling the styling we want to apply based on https://getbootstrap.com/docs/5.2/components/buttons/  -->
+        <button class="btn btn-success"> Providers </button> <!-- class="btn btn-primary" it is telling the styling we want to apply based on https://getbootstrap.com/docs/5.2/components/buttons/  -->
+        <p> Find out more information if you or a family member needs health insurance</p>
+
+
+        <!-- now lets take a look at something that bootstrap can provide us, a card! 
+        https://getbootstrap.com/docs/5.2/components/card/ -->
+        <div class="card" style="width: 18rem;">
+            <img src="https://www.incimages.com/uploaded_files/image/1920x1080/getty_537417114_357492.jpg" class="card-img-top" alt="Muir Woods">
+            <div class="card-body">
+              <h5 class="card-title">Shop for a Plan</h5>
+              <p class="card-text">Medical</p>
+              <p class="card-text">Dental</p>
+              <p class="card-text">Vision</p>
+              <p class="card-text">Prescription</p>
+              <p class="card-text">Life</p>
+              <a href="#" class="btn btn-dark">More Plans</a>
+            </div>
+        </div>
+
+        <hr class="col-3 col-md-2 mb-5">
+        
+
+    
+
+        <h2>Member Reviews</h2>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://img.freepik.com/free-vector/characters-senior-couple-health-insurance-illustration_53876-40417.jpg?w=2000" class="d-block w-50" alt="Member Reviews">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>My Review</h5>  
+            </div>
+              <div class="carousel-item">
+                <img src="#" class="d-block w-50" alt="Photo2">
+              </div>
+              <div class="carousel-item">
+                <img src="#" class="d-block w-50" alt="Photo3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+
+
+
+
+
+
+
+
+    </body>
+
+  
+    
+</html>
